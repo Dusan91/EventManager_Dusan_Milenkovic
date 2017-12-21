@@ -1,2 +1,4 @@
 bin
 obj
+packages
+/WebEvents/.vs/WebEvents/v15/*.suo
