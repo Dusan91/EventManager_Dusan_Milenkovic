@@ -47,10 +47,12 @@ Setup Guide
   Make sure you do not have another table with name "Events".
   Because the application uses a local database, there is no need for other settings, 
   but if you want to use your own base, in Web.config change "connectionString".
-  <connectionStrings>
-    <add name="EventsConnection" connectionString="Data Source={$Your_base_name};AttachDbFilename=|DataDirectory|\{$Your_table_name};Initial Catalog=EventsInfo;Integrated Security=True" providerName="System.Data.SqlClient"/>
-  </connectionStrings>
-  In Package Manager Console type "update-database"
+  
+  "<connectionStrings>	
+    <add name="EventsConnection" connectionString="Data Source={$Your_base_name};AttachDbFilename=|DataDirectory|\				{$Your_table_name};Initial Catalog=EventsInfo;Integrated Security=True" providerName="System.Data.SqlClient"/>
+  </connectionStrings>"
+  
+  In Package Manager Console type "update-database".
   When process is finished open application. 
   If you want to start application and debug it, click on Debug->Start Debugging (or press F5 on keyboard).
   If you just want to start application, click on Debug->Start Without Debugging (or press Ctrl+F5 on keyboard).
